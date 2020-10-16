@@ -8,16 +8,17 @@
   
   <title>Frontend Mentor | Room homepage</title>
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; position: relative;bottom:-130px; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+  <div id="body-con">
   
   <header>
     <nav class="hide-nav">
       <div id="nav-con">
-      <img src="../images/icon-close.svg" alt="close-menu" >
+      <img src="../images/icon-close.svg" alt="close-menu" id='close-nav' >
       <ul>
         <li>Home</li>
         <li>Shop</li>
@@ -32,7 +33,7 @@
       </div>
       <div id="flex-con">
           <!-- flex-con for harmburger and logo -->
-          <div id="nav-imgs">
+          <div id="open-nav">
             <img src="../images/icon-hamburger.svg" alt="harmburger-menu" >
           
           </div>
@@ -52,7 +53,7 @@
       <div class="slider" id='slide-now'>
       <h1>Discover innovative ways to decorate</h1>
       <p>We provide unmatched quality, comfort, and style for property owners across the country.
-      Our experts combine form andnfunction in bringing your vision to life. Create a room in your
+      Our experts combine form and function in bringing your vision to life. Create a room in your
       own style with our collection and make your property a reflection of you and what you love.</p>
       <button>Shop now</button>
       <img src="../images/icon-arrow.svg">
@@ -74,7 +75,7 @@
       <img src="../images/icon-arrow.svg">
     </div>
   </section>
-  <section ><img src="../images/image-about-dark.jpg"  width=100% alt=""></section>
+  <section id='about-dark'><img src="../images/image-about-dark.jpg"  width=100% alt=""></section>
   <section id="future">
     <div>
     <h1>About our furniture</h1>
@@ -84,10 +85,12 @@
     or anything in between. Product specialists are available to help you create your dream space.</p>
   </div>
   </section>
-  <section><img src="../images/image-about-light.jpg" alt=""></section>
+  <section id='about-light'><img src="../images/image-about-light.jpg" alt=""></section>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Ajao Yussuf</a>.
   </div>
+  
 </body>
 </html>

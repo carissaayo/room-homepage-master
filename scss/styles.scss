@@ -1,4 +1,14 @@
 @import "variables";
+@import "desktop";
+@media screen and (min-width:900px) {
+    header{
+        #nav-imgs {
+        &:first-child {
+            margin-right: 300px;
+            // display: none;
+        }
+    }}
+}
 
 *{
     box-sizing: border-box;
@@ -18,14 +28,12 @@ p{
 header{
     height: auto;
     position: relative;
-    #no-nav{
-        
-    }
+   
     #hero-img-con img{
          width:100%;
-
          height:400px;
     }
+
     #flex-con{
         display: flex;
         justify-content: space-between;
@@ -47,12 +55,10 @@ header{
     .hide-nav {
         display: none;
     }
-    nav {
-        
+    nav {        
         position: relative;
         height: auto;
          margin-bottom: 100px;
-        
         #nav-con{
         position: absolute;
         background-color: $White;
@@ -61,10 +67,8 @@ header{
         height:120px;
         padding:50px 30px;
         top:-100px;
-       
        @include flex()}
        img{
-        //    width:20px
         height:20px;
 
        }
@@ -78,10 +82,8 @@ header{
                padding: 0 10px
            }
         
-    }
-    
-        // display: none;
-    }
+    }       
+}
     #change-bg-img{
         position: absolute;
         z-index: 30;
@@ -157,6 +159,9 @@ section:nth-of-type(2),
 section:nth-of-type(4){
     width:100%;
     img{
-        width:100%
+        width:100%;
+        height: 600px;
     }
 }
+
+@import "desktop";
