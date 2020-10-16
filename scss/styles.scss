@@ -41,6 +41,13 @@ header{
         top:50px;
         left:30px;
         z-index: 200;
+        #open-nav {
+            margin-right: 270px;
+            img {
+                @include cursor();
+
+            }
+        }
 
     }
     #nav-imgs {
@@ -50,6 +57,7 @@ header{
         }
         img{
             @include cursor();
+            
         }       
     }
     .hide-nav {
