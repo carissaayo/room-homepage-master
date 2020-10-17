@@ -33,8 +33,16 @@ header{
          width:100%;
          height:400px;
     }
-
-    #flex-con{
+    .hide-logo{
+        // for hiding the logo and harmburger
+        display: none
+    }
+    #no-nav{
+        &>div:nth-child(2){
+            
+        }
+    }
+    .flex-con{
         display: flex;
         justify-content: space-between;
         position: absolute;
@@ -76,8 +84,10 @@ header{
         padding:50px 30px;
         top:-100px;
        @include flex()}
+
        img{
         height:20px;
+        @include cursor();
 
        }
        ul {
@@ -89,6 +99,7 @@ header{
            li {
                padding: 0 10px
            }
+           
         
     }       
 }
