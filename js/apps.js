@@ -21,64 +21,55 @@ let slide = [
 
     }
 ];
-
+// the harmburger menu
 const openNav= document.getElementById('open-nav');
+// nthe nav container 
 let nav = document.querySelector('.hide-nav');
+// the close nav menu 
 let closeNav =document.getElementById('close-nav');
 // the harmburger and the logo con
 let hideHarmburger = document.getElementById('hide-harmburger-logo');
-// the container for the two changing arrows
+// change the hero image
 let prevHero = document.getElementById('change-left');
 let nextHero = document.getElementById('change-right');
+// the hero image
 let heroImg = document.getElementById('hero-img');
+// the slider h1
 let header = document.getElementById('header');
+// the slider p tag
 let text = document.getElementById('text');
 
+// for accessing the slide array
 let currentItem = 0;
 
+// to go back to the previoushero image
 prevHero.addEventListener('click',(item)=>{
     currentItem--;
     changeCurrentNumber();
     changeBg()
 })
+// 
+// to go back to the next hero image
 nextHero.addEventListener('click',item=>{
     currentItem++;
     changeCurrentNumber()
     changeBg()
 })
 function changeCurrentNumber(){
-    if (currentItem > slide.length - 1) { currentItem = 0 }
+    // when the currentItem is greater than the last item index
+    if (currentItem > slide.length - 1) { currentItem = 0 };
+    // when the item is at 0 and needs to go to the last item
     if (currentItem <0){
+        // makes the next item to be the last item
         currentItem = slide.length-1;
     }
 }
 function changeBg(){
-
      let item = slide[currentItem];
      heroImg.src = item.img;
      header.textContent = item.header;
-     text.textContent = item.text
-
-
+     text.textContent = item.text;
 }
-// changeBg()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Navbar Events 
 openNav.addEventListener('click',(e)=>{
