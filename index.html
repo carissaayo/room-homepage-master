@@ -1,82 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-<link rel="stylesheet" href="../css/styles.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Room homepage</title>
-  <style>
-    .attribution { font-size: 11px; text-align: center; position: relative;bottom:-130px; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <div id="body-con">
-  
-    <header>
-      <nav class="hide-nav">
-        <div id="nav-con">
-        <img src="../images/icon-close.svg" alt="close-menu" id='close-nav' >
-        <ul>
-          <li>Home</li>
-          <li>Shop</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Room homepage</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: relative;
+        bottom: -130px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="body-main-con">
+      <div class="con-1">
+        <div class="hero-img-con">
+          <img src="../images/desktop-image-hero-1.jpg" alt="hero-img" />
         </div>
-      </nav>
-      <div >
-        <div id="hero-img-con">
-          <img src="../images/desktop-image-hero-1.jpg" alt="" id="hero-img">
-        </div>
-        <div id='hide-harmburger-logo'><!-- use in javascript for hiding harmburger and logo  -->
-        <div class="flex-con">
-            <!-- flex-con for harmburger and logo -->
-            <div id="open-nav">
-              <img src="../images/icon-hamburger.svg" alt="harmburger-menu" >
-            
-            </div>
-            <div id="logo-con">
-              <img src="../images/logo.svg" alt="logo" id="logo">
-            </div>
-        </div>
+
+        <nav class="nav-con">
+          <img src="../images/logo.svg" alt="logo" id="logo" />
+          <ul class="nav-menu">
+            <li>Home</li>
+            <li>Shop</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="text-con">
+        <h1>Discover innovative ways to decorate</h1>
+        <p id="text">
+          We provide unmatched quality, comfort, and style for property owners
+          across the country. Our experts combine form and function in bringing
+          your vision to life. Create a room in your own style with our
+          collection and make your property a reflection of you and what you
+          love.
+        </p>
+        <button>
+          Shop now <span>
+            <img src="../images/icon-arrow.svg" /></span>
+        </button>
+        <div id="change-bg-img">
+          <img
+            src="../images/icon-angle-left.svg"
+            alt="change-left"
+            class="change-bg-img"
+            id="change-left"
+          />
+          <img
+            src="../images/icon-angle-right.svg"
+            alt="change-right"
+            class="change-bg-img"
+            id="change-right"
+          />
         </div>
       </div>
-    
-      <div id="change-bg-img">
-        <img src="../images/icon-angle-left.svg" alt="change-left"  class="change-bg-img" id="change-left">
-      <img src="../images/icon-angle-right.svg" alt="change-right" class="change-bg-img" id="change-right">
     </div>
-  </header>
-  <section id="slide">
-      <div class="slider" >
-      <h1 id="header">Discover innovative ways to decorate</h1>
-      <p id="text">We provide unmatched quality, comfort, and style for property owners across the country.
-      Our experts combine form and function in bringing your vision to life. Create a room in your
-      own style with our collection and make your property a reflection of you and what you love.</p>
-      <button>Shop now</button>
-      <img src="../images/icon-arrow.svg">
+    <section id='body-second-con'>
+        <div id='dark-img-con'>       
+          <img src="../images/image-about-dark.jpg" alt="" />
+        </div>
+          <article>
+            <h1>About our furniture</h1>
+            <p>
+              Our multifunctional collection blends design and function to suit
+              your individual taste. Make each room unique, or pick a cohesive
+              theme that best express your interests and what inspires you. Find
+              the furniture pieces you need, from traditional to contemporary
+              styles or anything in between. Product specialists are available to
+              help you create your dream space.
+            </p>
+          </article>
+        <div id="about-light">
+          <img src="../images/image-about-light.jpg" alt="" />
+        </div>
+    </section>
+      
+     
+   
+
+    <!-- <div id="hide-harmburger-logo">
+          
+            <div class="flex-con">
+            
+              <div id="open-nav">
+                <img src="../images/icon-hamburger.svg" alt="harmburger-menu" />
+              </div>
+              <div id="logo-con">
+                <img src="../images/logo.svg" alt="logo" id="logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="change-bg-img">
+          <img
+            src="../images/icon-angle-left.svg"
+            alt="change-left"
+            class="change-bg-img"
+            id="change-left"
+          />
+          <img
+            src="../images/icon-angle-right.svg"
+            alt="change-right"
+            class="change-bg-img"
+            id="change-right"
+          />
+        </div>
+      <section id="slide">
+        <div class="slider">
+          <h1 id="header">Discover innovative ways to decorate</h1>
+          <p id="text">
+            We provide unmatched quality, comfort, and style for property owners
+            across the country. Our experts combine form and function in
+            bringing your vision to life. Create a room in your own style with
+            our collection and make your property a reflection of you and what
+            you love.
+          </p>
+          <button>Shop now</button>
+          <img src="../images/icon-arrow.svg" />
+        </div>
+      </section>
+      <section id="about-dark">
+        <img src="../images/image-about-dark.jpg" width="100%" alt="" />
+      </section>
+      <section id="future">
+        <div>
+          <h1>About our furniture</h1>
+          <p>
+            Our multifunctional collection blends design and function to suit
+            your individual taste. Make each room unique, or pick a cohesive
+            theme that best express your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available to
+            help you create your dream space.
+          </p>
+        </div>
+      </section>
+      <section id="about-light">
+        <img src="../images/image-about-light.jpg" alt="" />
+      </section>
     </div>
-  </section>
-  <!-- dark image section -->
-  <section id='about-dark'><img src="../images/image-about-dark.jpg"  width=100% alt=""></section>
-  <section id="future">
-    <div>
-    <h1>About our furniture</h1>
-    <p>Our multifunctional collection blends design and function to suit your individual taste.
-    Make each room unique, or pick a cohesive theme that best express your interests and what
-    inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-    or anything in between. Product specialists are available to help you create your dream space.</p>
-  </div>
-  </section>
-  <section id='about-light'><img src="../images/image-about-light.jpg" alt=""></section>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Ajao Yussuf</a>.
-  </div>
-  <script src="../js/apps.js"></script>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ajao Yussuf</a>.
+    </div> -->
+    <script src="../js/apps.js"></script>
+  </body>
 </html>
