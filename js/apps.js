@@ -28,8 +28,6 @@ const openNav= document.getElementById('open-nav');
 let nav = document.querySelector('nav');
 // // the close nav menu 
 let closeNav =document.getElementById('close-nav');
-// // the harmburger and the logo con
-// let hideHarmburger = document.getElementById('hide-harmburger-logo');
 // change the hero image
 let prevHero = document.getElementById('change-left');
 let nextHero = document.getElementById('change-right');
@@ -71,26 +69,14 @@ function changeBg(){
      text.textContent = item.text;
 }
 
-// Navbar Events 
-
-    
+// Navbar Events    
 openNav.addEventListener('click',(e)=>{
  nav.classList.add('close-nav-con')
 }
 )
-    // openNavBar()
-    // nav.classList.add("close-nav-con");
-
-
-
 closeNav.addEventListener('click',()=>{
-//    closeNavBar()
     nav.classList.remove("close-nav-con");
-
 })
 
-// // NavBar funtions
 
-function closeNavBar(){
-    // hideHarmburger.classList.toggle('hide-logo');
-}
+
