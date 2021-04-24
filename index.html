@@ -17,8 +17,6 @@
       .attribution {
         font-size: 11px;
         text-align: center;
-        /* position: relative; */
-        /* bottom: -130px; */
         margin-bottom: 20px;
       }
       .attribution a {
@@ -30,7 +28,7 @@
     <div id="body-con">
       <section class="con-1">
         <div id="open-nav">
-          <img src="../images/icon-hamburger.svg" alt="harmburger-menu" />
+          <img src="../images/icon-hamburger.svg" alt="harmburger-menu" class='close-harmburger' id='open-nav' />
         </div>
         <div class="hero-img-con">
           <img
@@ -40,8 +38,9 @@
           />
         </div>
 
-        <nav class="nav-con">
-          <img src="../images/logo.svg" alt="logo" id="logo" />
+        <nav class="nav-con ">
+           <img src="../images/icon-close.svg"  id='close-nav'/>
+          <img src="../images/logo.svg" alt="logo" id="logo" class="hide-logo"  />
           <ul class="nav-menu">
             <li>Home</li>
             <li>Shop</li>
@@ -102,7 +101,7 @@
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Ajao Yussuf</a>.
-    </div> 
+    </div>
     <script src="../js/apps.js" defer></script>
   </body>
 </html>

@@ -21,12 +21,13 @@ let slide = [
 
     }
 ];
+
 // // the harmburger menu
-// const openNav= document.getElementById('open-nav');
-// // nthe nav container 
-// let nav = document.querySelector('.hide-nav');
+const openNav= document.getElementById('open-nav');
+// // the nav container 
+let nav = document.querySelector('nav');
 // // the close nav menu 
-// let closeNav =document.getElementById('close-nav');
+let closeNav =document.getElementById('close-nav');
 // // the harmburger and the logo con
 // let hideHarmburger = document.getElementById('hide-harmburger-logo');
 // change the hero image
@@ -70,21 +71,26 @@ function changeBg(){
      text.textContent = item.text;
 }
 
-// // Navbar Events 
-// openNav.addEventListener('click',(e)=>{
-//     openNavBar()
-// })
+// Navbar Events 
 
-// closeNav.addEventListener('click',()=>{
+    
+openNav.addEventListener('click',(e)=>{
+ nav.classList.add('close-nav-con')
+}
+)
+    // openNavBar()
+    // nav.classList.add("close-nav-con");
+
+
+
+closeNav.addEventListener('click',()=>{
 //    closeNavBar()
-// })
+    nav.classList.remove("close-nav-con");
+
+})
 
 // // NavBar funtions
-// function openNavBar(){
-//     nav.classList.toggle('hide-nav');
-//     hideHarmburger.classList.toggle('hide-logo');
-// }
-// function closeNavBar(){
-//     nav.classList.toggle('hide-nav');
-//     hideHarmburger.classList.toggle('hide-logo');
-// }
+
+function closeNavBar(){
+    // hideHarmburger.classList.toggle('hide-logo');
+}
