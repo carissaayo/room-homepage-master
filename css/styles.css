@@ -12,6 +12,7 @@
 
 body {
   font-size: 12px;
+  font-family: "Spartan", sans-serif;
   overflow: hidden;
   position: relative;
 }
@@ -89,7 +90,7 @@ body {
 
 @media screen and (max-width: 680px) {
   #body-con .con-1 .nav-con {
-    width: 295px;
+    width: 171px;
     left: 40%;
   }
 }
@@ -370,6 +371,7 @@ body {
 
 #body-con #furniture-text h1 {
   font-size: 1.3em;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: 600;
